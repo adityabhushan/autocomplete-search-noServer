@@ -16,6 +16,7 @@
         
 
         var showResults = function(){
+            $scope.searchTerm = $scope.searchTerm.toLowerCase();
             let result = $dataService.searchResult($scope.searchTerm);
             var resultDiv = document.getElementById('search-results');
             var nameContainer = document.getElementById('nameList');

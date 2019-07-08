@@ -430,9 +430,12 @@
 
             this.searchResult = function(searchTerm){
                 let resultArr = this.dataArr.filter(function(obj){
+                    obj.name.first = obj.name.first.toLowerCase();
+                    obj.name.last = obj.name.last.toLowerCase();
+                    obj.company = obj.company.toLowerCase();
+                    
                     if (obj.name.first.includes(searchTerm) || obj.name.last.includes(searchTerm) 
-                    || obj.company.includes(searchTerm)) {
-                        
+                    || obj.company.includes(searchTerm)) { 
                         return obj;
                     }
                 })

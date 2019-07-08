@@ -67,6 +67,6 @@ body {
 
 @media (max-width: 430px) {
     .auto-wrapper {
-        flex-basis: 80%;
+        flex-basis: 80vw;
     }
 }
